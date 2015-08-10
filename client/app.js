@@ -8,4 +8,4 @@ let App = React.createClass({
   }
 });
 
-React.renderComponent('app', <App/>);
+React.render(<App/>, document.getElementById('app'));

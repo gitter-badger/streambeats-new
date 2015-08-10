@@ -1,8 +1,11 @@
 import React from 'react';
-import Router from 'react-router';
 
-class App extends React.Component {
+let App = React.createClass({
   render() {
-
+    return (
+      <div>Hello world</div>
+    );
   }
-}
+});
+
+React.renderComponent('app', <App/>);

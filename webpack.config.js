@@ -1,7 +1,8 @@
 module.exports = {
-  entry: './client/entry.js',
+  entry: './client/app.js',
   output: {
-    path: './apps/web/public/javascripts'
+    path: './apps/web/public/javascripts',
+    filename: 'application.js'
   },
   module: {
     loaders: [

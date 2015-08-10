@@ -1,11 +1,11 @@
 import React from 'react';
 
-let App = React.createClass({
+class App extends React.Component {
   render() {
     return (
-      <div>Hello world</div>
+      <div>Application init</div>
     );
   }
-});
+}
 
 React.render(<App/>, document.getElementById('app'));

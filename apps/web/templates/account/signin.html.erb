@@ -1,5 +1,11 @@
 
-Sign in 
+Sign in
+
+<ul>
+    <% params.errors.each do |error| %>
+      <li><%= error.attribute_name %> is required</li>
+    <% end %>
+</ul>
 
 <%=
   form_for :sesion, '/sessions/create' do

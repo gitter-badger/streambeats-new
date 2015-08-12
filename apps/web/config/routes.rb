@@ -1,3 +1,4 @@
+get '/', to: 'home#index'
 get '/account/signup', to: 'account#signup'
 get '/account/signin', to: 'account#signin'
 # Configure your routes here

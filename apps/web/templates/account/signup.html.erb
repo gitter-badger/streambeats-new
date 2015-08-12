@@ -1,0 +1,30 @@
+sign up
+
+<ul>
+    <% params.errors.each do |error| %>
+      <li><%= error.attribute_name %> is required</li>
+    <% end %>
+</ul>
+
+<%=
+  form_for :sesion, '/sessions/create' do
+    div class: 'input' do
+      label :email
+      text_field :email
+    end
+
+    div class: 'input' do
+      label :password
+      text_field :password
+    end
+
+    div class: 'input' do
+      label :first_name
+      text_field :last_name
+    end
+
+    div class: 'controls' do
+      submit 'Login'
+    end
+  end
+ %>
